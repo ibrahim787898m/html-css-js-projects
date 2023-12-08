@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript Light On Off</title>
+<link rel="stylesheet" href="practice.css">
+<style type="text/css">
+*{
+	background: black;
+}
+button,h1,p{
+	color: white;
+}
+.b1{
+	margin-left: 5%;
+	width:100px;
+	height:50px;
+}
+.b2{
+	margin-left: 40%;
+	width:100px;
+	height:50px;
+}
+img {
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 200px;
+  	height:250px;
+}
+.bulbGif{
+	width: 100%;
+}
+</style>
+</head>
+<body>
+
+<h1>My First JavaScript</h1>
+<p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<img id="myImage" src="light_bulb_off.png" width="150" height="180">
+
+<p>
+<button class="b1" type="button" onclick="light(1)">Light On</button>
+<button class="b2" type="button" onclick="light(0)">Light Off</button>
+</p>
+
+<ig class="bulbGif" src="1_3zDOMH-c_oORS9C7D2xe0Q.gif">
+
+<script>
+console.log("hello world")
+
+alert("Hello! Welcome to the Javascript light on off.")
+
+function light(sw) {
+	var pic;
+  	if (sw == 0) {
+    	pic = "light_bulb_off.png"
+  	} else {
+    pic = "light_bulb_on.png"
+  	}
+  	document.getElementById('myImage').src = pic;
+}
+</script>
+
+<script type="text/javascript" src="practice.js"></script>
+</body>
+</html>

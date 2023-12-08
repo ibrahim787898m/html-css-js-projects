@@ -1,0 +1,20 @@
+.container {
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px 10px;
+}
+.container h2 {
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+}
+#result h2 {
+  border-top: 1px solid black;
+  margin-top: 8px;
+  padding-top: 8px;
+}
+.buttonDiv {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  justify-content: space-around;
+}

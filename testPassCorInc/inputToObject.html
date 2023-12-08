@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Putting User Input into JS Objects</title>
+    <style>
+      .formBox {
+        padding: 0.5rem 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Insert the value -->
+    <form>
+      <div class="formBox">
+        <label for="title">Name</label>
+        <input type="text" id="title" placeholder="Input Name" />
+      </div>
+      <div class="formBox">
+        <label for="yr">Password</label>
+        <input type="number" id="yr" placeholder="Input Password" />
+      </div>
+      <div class="formBox">
+        <button id="btn">Click to Add</button>
+      </div>
+      <div id="msg">
+        <pre></pre>
+      </div>
+    </form>
+
+    <!-- Check the value right or wrong -->
+    <div style="margin-left: 30px" id="checkBox">
+      <label for="title">Id</label>
+      <input type="text" id="checkId" placeholder="Check Id" />
+      <br />
+      <br />
+      <label for="title">Name</label>
+      <input type="text" id="checkTitle" placeholder="Check Name" />
+      <br />
+      <br />
+      <label for="yr">Password</label>
+      <input type="number" id="checkYr" placeholder="Check Password" />
+      <br />
+      <br />
+      <button id="checkBtn">Click to Check</button>
+    </div>
+    <div id="resut">
+      <h2 id="showResult"></h2>
+    </div>
+    <script>
+      // insert the value
+      let users = [];
+      // example {id:1592304983049, title: 'Deadpool', year: 2015}
+      const addMovie = (ev) => {
+        ev.preventDefault(); //to stop the form submitting
+        let movie = {
+          id: Date.now(),
+          name: document.getElementById("title").value,
+          year: document.getElementById("yr").value,
+        };
+        users.push(movie);
+        document.forms[0].reset(); // to clear the form for the next entries
+        //document.querySelector('form').reset();
+
+        //for display purposes only
+        console.warn("added", { users });
+        let pre = document.querySelector("#msg pre");
+        pre.textContent = "\n" + JSON.stringify(users, "\t", 2);
+
+        //saving to localStorage
+        localStorage.setItem("MyMovieList", JSON.stringify(users));
+      };
+      document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("btn").addEventListener("click", addMovie);
+      });
+
+      // check the value
+      let checkBtn = document.querySelector("#checkBtn");
+      let checkTitle = document.querySelector("#checkTitle");
+      let checkYr = document.querySelector("#checkYr");
+      let checkId = document.querySelector("#checkId");
+      let showResult = document.querySelector("#showResult");
+      checkBtn.addEventListener("click", function () {
+        for (let i = 0; i < users.length; i++) {
+          // console.log(users[i].id);
+
+          if (
+            checkTitle.value == users[i].name &&
+            checkYr.value == users[i].year &&
+            checkId.value == users[i].id
+          ) {
+            // alert("true");
+            showResult.innerHTML = "Correct!";
+            break;
+          } else {
+            // alert("false");
+            showResult.innerHTML = "Incorrect!";
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

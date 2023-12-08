@@ -1,0 +1,1187 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+}
+section {
+  padding: 80px 0px;
+}
+.topBarMain {
+  background-color: rgb(245, 245, 245);
+}
+.container {
+  width: 1140px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: auto;
+}
+.phone {
+  width: 220px;
+  float: left;
+  padding: 15px 10px;
+  border-left: 1px solid rgb(221, 221, 221);
+  border-right: 1px solid rgb(221, 221, 221);
+}
+.email {
+  width: 750px;
+  float: left;
+  padding: 15px 10px;
+}
+.social {
+  width: 140px;
+  float: left;
+}
+.topBarWrapper {
+  overflow: hidden;
+}
+.social a {
+  display: block;
+  float: left;
+  padding: 15px;
+  border-right: 1px solid rgb(221, 221, 221);
+  color: rgb(43, 43, 43);
+  transition: all 0.4s ease 0s;
+}
+.social a:hover {
+  color: rgb(255, 82, 0);
+}
+.social a:first-child {
+  border-left: 1px solid rgb(221, 221, 221);
+}
+.phone i {
+  color: rgb(255, 82, 0);
+}
+.email i {
+  color: rgb(255, 82, 0);
+}
+.primaryWrapper {
+  display: table;
+  width: 100%;
+}
+.logo {
+  width: 150px;
+  float: left;
+  margin-top: 20px;
+}
+.menu {
+  width: 960px;
+  float: left;
+}
+ul.mailMenuItem {
+  list-style: none;
+  float: right;
+}
+ul.mailMenuItem li {
+  float: left;
+  position: relative;
+}
+ul.mailMenuItem li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Oswald;
+  font-size: 15px;
+  display: block;
+  padding: 30px 20px;
+  color: black;
+  font-weight: 500;
+  transition: all 0.4s ease 0s;
+}
+ul.mailMenuItem li a:hover {
+  color: rgb(255, 82, 0);
+}
+#homeSlider {
+  background: url("images/slide-1.jpg") 60% center no-repeat;
+  padding: 0px;
+}
+.sliderContent {
+  color: white;
+  width: 501px;
+}
+.sliderContent h1 {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-top: 120px;
+  float: left;
+}
+.sliderContent p {
+  font-weight: 500;
+  line-height: 25px;
+  width: 483px;
+  margin-bottom: 30px;
+}
+button#sliderBtn {
+  background: rgb(255, 82, 0);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  font-family: Oswald;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  border-radius: 3px;
+  margin-bottom: 120px;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+}
+button#sliderBtn:hover {
+  background: rgb(37, 37, 37);
+}
+.sliderNav {
+  width: 50px;
+  margin: auto;
+  padding-bottom: 40px;
+}
+.sliderNav span {
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  border: 3px solid rgb(221, 221, 221);
+  border-radius: 100%;
+  display: block;
+  cursor: pointer;
+  float: left;
+  margin-right: 10px;
+}
+.sliderNav span:first-child {
+  background: rgb(255, 82, 0);
+  border: rgb(255, 82, 0);
+}
+#services {
+  background: rgb(245, 246, 246);
+}
+.sBoxWrapper {
+  overflow: hidden;
+}
+.singleBox {
+  width: 243px;
+  background: white;
+  padding: 15px;
+  float: left;
+  margin-right: 34px;
+  transition: all 0.5s ease 0s;
+  border: 1px solid rgb(235, 235, 235);
+}
+.singleBox.active {
+  color: white;
+  background: rgb(255, 82, 0) !important;
+}
+.active a {
+  color: white !important;
+}
+.active h2 {
+  color: white !important;
+}
+.active i {
+  color: white !important;
+}
+.singleBox:hover {
+  background: rgb(255, 82, 0);
+  color: white;
+}
+.singleBox:hover h2 {
+  color: white;
+}
+.singleBox:hover a {
+  color: white;
+}
+.singleBox:hover i {
+  color: white;
+}
+.sBoxTittle {
+  text-align: center;
+  width: 150px;
+  margin: auto;
+}
+.sBoxTittle h2 {
+  font-size: 20px;
+  line-height: 28.1px;
+  text-transform: uppercase;
+  color: rgb(51, 51, 51);
+  letter-spacing: 0.5px;
+  margin: 25px 0px;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+}
+.sBoxIcon {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(255, 82, 0);
+  margin: 25px 0px;
+}
+.sBoxIcon i {
+  transition: all 0.5s ease 0s;
+}
+.sBoxDesc {
+  text-align: center;
+  margin: 25px 0px;
+}
+.sBoxLink {
+  text-align: center;
+  margin: 25px 0px;
+}
+.sBoxLink a {
+  text-decoration: none;
+  color: rgb(255, 82, 0);
+  font-weight: 500;
+  transition: all 0.5s ease 0s;
+}
+.sBoxLink i {
+  transition: all 0.2s ease 0s;
+}
+.woWusWrapper {
+  overflow: hidden;
+}
+.woWusImg {
+  width: 47%;
+  float: left;
+  margin-right: 23px;
+}
+.woWusImg img {
+  width: 100%;
+}
+.woWusContent {
+  width: 47%;
+  float: left;
+  margin-left: 23px;
+}
+.woWusConTittle h2 {
+  font-size: 36px;
+}
+.woWusConDesc {
+  margin-bottom: 35px;
+}
+.woWusConTittle {
+  margin-bottom: 10px;
+}
+.woWusConDesc p {
+  color: rgb(101, 101, 101);
+  font-size: 16px;
+}
+.woWusConLink {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.woWusConLinkLeft {
+  width: 50%;
+  float: left;
+}
+.woWusConLinkRight {
+  width: 50%;
+  float: left;
+}
+.woWusConLink a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 20px;
+  transition: all 0.3s ease 0s;
+}
+.woWusConLink a:hover {
+  color: rgb(255, 82, 0);
+}
+.woWusConLink i {
+  color: rgb(141, 141, 141);
+  font-size: 14px;
+  transition: all 0.3s ease 0s;
+}
+.woWusConLink a:hover i {
+  color: rgb(255, 82, 0);
+}
+.woWusConBtn button {
+  width: 140px;
+  height: 50px;
+  background: rgb(255, 82, 0);
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: Oswald;
+  border-radius: 3px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.woWusConBtn button:hover {
+  background-color: rgb(37, 37, 37);
+}
+#whyChoose {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)) center
+      center no-repeat,
+    url("images/why-choose-us1.jpg");
+}
+.wcSingleBoxWrapper {
+  overflow: hidden;
+}
+.wcSingleBox {
+  width: 277px;
+  float: left;
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+.wcSbLogo i {
+  font-size: 45px;
+}
+.wcSbCounter h1 {
+  font-size: 50px;
+  font-family: revert;
+  font-weight: 700;
+}
+.wcSbMerit h3 {
+  font-size: 20px;
+}
+.wcSbLogo {
+  margin-bottom: 15px;
+}
+.wcSbCounter {
+  margin-bottom: 15px;
+}
+.singleFeatureBoxTop {
+  margin: auto auto 50px;
+  text-align: center;
+}
+.sfbtTittle h1 {
+  font-size: 40px;
+}
+.sfbtSpan span {
+  background: rgb(255, 82, 0);
+  display: block;
+  width: 55px;
+  height: 3px;
+  text-align: center;
+  margin: auto;
+}
+.sfbtTittle {
+  margin-bottom: 10px;
+}
+.sfbtSpan {
+  margin-bottom: 10px;
+}
+.sfbtDesc {
+  width: 484px;
+  margin: auto;
+  color: rgb(101, 101, 101);
+}
+section#feature {
+  background: rgb(245, 246, 246);
+}
+.singleFeatureBoxWrapper {
+  overflow: hidden;
+}
+.singleFeatureBox {
+  width: 255px;
+  float: left;
+}
+.sfbImage img {
+  width: 100%;
+}
+.sfbImage {
+  margin-bottom: 10px;
+}
+.sfbTittle {
+  margin-bottom: 10px;
+}
+.sfbTittle h2 {
+  font-weight: 500;
+  font-size: 20px;
+}
+.sfbDesc p {
+  color: rgb(101, 101, 101);
+  line-height: 25px;
+}
+.singleFeatureBox {
+  margin-right: 30px;
+}
+.singleFeatureBox:last-child {
+  margin-right: 0px !important;
+}
+.singlePricePlanBoxWrapper {
+  overflow: hidden;
+}
+.singlePricePlanBox {
+  width: 330px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 20px 30px;
+  border-radius: 3px;
+  margin: 0px 20px;
+  box-shadow: rgb(250, 250, 250) -5px 5px 20px 10px;
+  float: left !important;
+}
+.sppbTittle h2 {
+  font-family: Oswald;
+  font-weight: 500;
+}
+.sppbSubTittle h1 {
+  font-size: 45px;
+  font-weight: bolder;
+  display: inline;
+  font-family: "Work Sans";
+}
+.sppbSubTittle sub {
+  font-size: 20px;
+  font-weight: 700;
+}
+.sppbSubTittle sub {
+  font-size: 20px;
+  font-weight: 700;
+}
+.sppbSubTittle {
+  margin-bottom: 25px;
+}
+.sppbList ul {
+  list-style: none;
+}
+.sppbList li {
+  margin-bottom: 15px;
+  color: rgb(101, 101, 101);
+}
+.sppbTittle {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.sppbList {
+  margin-bottom: 35px;
+}
+.sppbButton button {
+  width: 170px;
+  height: 45px;
+  background: rgb(255, 82, 0);
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: Oswald;
+  font-weight: 500;
+  border-radius: 3px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.sppbButton button:hover {
+  background: rgb(37, 37, 37);
+}
+.sppbButton {
+  margin-bottom: 15px;
+}
+.sppbList i {
+  color: rgb(255, 82, 0);
+  font-size: 12px;
+}
+.ideaImageContentWrapper {
+  overflow: hidden;
+  height: 460px;
+}
+.ideaImage {
+  width: 50%;
+  float: left;
+  height: 100%;
+}
+.ideaImage img {
+  width: 100%;
+  height: 100%;
+}
+.ideaContent {
+  width: 50%;
+  float: left;
+  background: rgb(34, 34, 34);
+  color: white;
+  height: 100%;
+  padding: 65px;
+}
+.ideaConTittle h1 {
+  font-size: 33px;
+}
+.ideaConTittle {
+  margin-bottom: 10px;
+}
+.ideaConDesc {
+  margin-bottom: 50px;
+}
+.ideaConSingleBoxWrapper {
+  overflow: hidden;
+}
+.ideaConSinBLeft {
+  width: 50%;
+  float: left;
+}
+.ideaConSinBRight {
+  width: 50%;
+  float: left;
+}
+.ideaConSinBLogoConWrapper {
+  overflow: hidden;
+}
+.ideaConSinBLogo {
+  width: 28%;
+  float: left;
+}
+.ideaConSinBCon {
+  width: 72%;
+  float: left;
+}
+.ideaConSinBLogo i {
+  font-size: 40px;
+  color: rgb(255, 82, 0);
+}
+.ideaConSinBConTittle h3 {
+  font-size: 20px;
+  font-family: Oswald;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.ideaConSinB:hover h3 {
+  color: rgb(255, 82, 0);
+}
+.ideaConSinBConTittle {
+  margin-bottom: 10px;
+}
+.ideaConSinBConDesc p {
+  color: rgb(199, 199, 199);
+  font-weight: 500;
+}
+.ideaConSinB {
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+section#idea {
+  padding: 0px;
+}
+.teamPersons {
+  overflow: hidden;
+}
+.singlePerson {
+  width: 250px;
+  float: left;
+  overflow: hidden;
+  margin-right: 36px;
+  border: 0.5px solid rgb(243, 243, 243);
+}
+.personImg img {
+  width: 100%;
+}
+.singlePerson:last-child {
+  margin-right: 0px;
+}
+.personInfo {
+  text-align: center;
+  padding: 20px;
+}
+.personInfo p {
+  font-size: 13px;
+  color: rgb(101, 101, 101);
+}
+.personInfo h3 {
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+.joinTeamButton {
+  margin-top: 50px;
+  display: grid;
+  place-items: center;
+}
+.joinTeamButton button {
+  width: 175px;
+  height: 50px;
+  background: rgb(34, 34, 34);
+  border: none;
+  color: white;
+  font-family: Oswald;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.joinTeamButton button:hover {
+  background: rgb(255, 82, 0);
+}
+.personImg {
+  overflow: hidden;
+  position: relative;
+}
+.socialIcons {
+  position: absolute;
+  bottom: 50px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.socialIcons a {
+  width: 20px;
+  height: 20px;
+  float: left;
+  overflow: hidden;
+  background: red;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  border-radius: 100%;
+  padding: 13px;
+  color: white;
+  margin-right: 5px;
+  transition: all 0.3s ease 0s;
+  opacity: 0;
+}
+.socialIcons i {
+  overflow: hidden;
+  font-size: 14px;
+}
+.socialIcons a:nth-child(4):hover {
+  background: white;
+  color: black;
+  transition-delay: 0.1s !important;
+}
+.socialIcons a:nth-child(3):hover {
+  background: white;
+  color: black;
+  transition-delay: 0.1s !important;
+}
+.socialIcons a:nth-child(2):hover {
+  background: white;
+  color: black;
+  transition-delay: 0.1s !important;
+}
+.socialIcons a:nth-child(1):hover {
+  background: white;
+  color: black;
+  transition-delay: 0.1s !important;
+}
+.socialIcons a:first-child {
+  background: rgb(66, 103, 178);
+}
+.socialIcons a:nth-child(2) {
+  background: rgb(29, 161, 242);
+}
+.socialIcons a:nth-child(3) {
+  background: rgb(219, 74, 57);
+}
+.socialIcons a:last-child {
+  background: rgb(0, 119, 181);
+}
+.singlePerson:hover .socialIcons a:nth-child(4) {
+  transform: translateY(20px);
+  opacity: 1;
+  transition-delay: 0.1s;
+}
+.singlePerson:hover .socialIcons a:nth-child(3) {
+  transform: translateY(20px);
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+.singlePerson:hover .socialIcons a:nth-child(2) {
+  transform: translateY(20px);
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+.singlePerson:hover .socialIcons a:nth-child(1) {
+  transform: translateY(20px);
+  opacity: 1;
+  transition-delay: 0.4s;
+}
+#projects {
+  background: rgb(245, 246, 246);
+}
+.projecsWrapper {
+  overflow: hidden;
+  column-count: 3;
+}
+.singleProject {
+  width: 350px;
+  float: left;
+  height: 283.66px;
+  margin-right: 25px;
+  position: relative;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+.singleProject:hover .projectInfo {
+  transform: translateY(0);
+}
+
+.singleProject:hover a#learnMoreBtn {
+  transform: translateX(0);
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+/*
+.singleProject:hover .projectInfo {
+  padding-bottom: 40px;
+}
+.singleProject:hover .projectInfo {
+  background: linear-gradient(to top, black, transparent 180px);
+}
+.singleProject:hover a#learnMoreBtn {
+  transform: translateX(0px);
+  transition: all 0.3s ease 0.3s;
+  visibility: visible;
+}
+*/
+.singleProject:last-child {
+  margin-right: 0px !important;
+}
+.singleProject img {
+  width: 100%;
+  height: 100%;
+}
+.projectInfo {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 40px 35px;
+  background: linear-gradient(to top, black, transparent 180px);
+  color: white;
+  transition: all 0.3s ease;
+  transform: translateY(50px);
+}
+.projectMeta {
+  width: 100%;
+  margin-bottom: 18px;
+}
+.projectMeta a {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+a#learnMoreBtn {
+  color: white;
+  text-decoration: none;
+  display: block;
+  transform: translateX(-152px);
+}
+i.fas.fa-long-arrow-alt-right {
+  margin-left: 8px;
+}
+
+.newsWrapper {
+  overflow: hidden;
+}
+
+.singleNews {
+  width: 350px;
+  float: left;
+  margin-right: 30px;
+  border: 1px solid #e5e5e5;
+}
+
+.singleNews:last-child {
+  margin-right: 0px !important;
+}
+
+.newsImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.newsImage {
+  width: 100%;
+  height: 238.77px;
+  overflow: hidden;
+}
+
+.newsMeta {
+  padding: 30px;
+}
+
+.newsCategory p {
+  display: inline;
+  margin-right: 40px;
+  color: #656565;
+  font-size: 13px;
+}
+
+.newsCategory {
+  margin-bottom: 15px;
+}
+
+.newsCategory span {
+  transform: translateX(-28px);
+  width: 15px;
+  height: 2px;
+  background: #ff5200;
+  position: absolute;
+  margin-top: 10px;
+}
+
+.newsCategory a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  margin-left: 3px;
+}
+
+.newsTittle h2 {
+  font-size: 20px;
+  color: #3c3c3c;
+  margin-bottom: 15px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.newsTittle p {
+  margin-bottom: 15px;
+  color: #656565;
+}
+
+.newsTittle a {
+  text-decoration: none;
+  color: #ff5200;
+}
+
+.newsTittle h2:hover {
+  color: #ff5200;
+}
+
+.newsCategory a:hover {
+  color: #ff5200;
+}
+
+.singleNews:hover .newsImage img {
+  transform: scale(1.1);
+}
+
+.newsImage img {
+  transition: 0.3s;
+}
+
+footer#footer {
+  background-color: #1a1a1a;
+  padding-top: 160px;
+}
+
+.copyrightContainer {
+  overflow: hidden;
+  color: #ababab;
+  border-top: 1px solid #333;
+}
+
+.copyrightContainer .container {
+  overflow: hidden;
+}
+
+.copyrightText {
+  width: 50%;
+  float: left;
+  margin-top: 30px;
+}
+
+.copyrightMenu {
+  width: 50%;
+  float: left;
+}
+
+.copyrightMenu li {
+  list-style: none;
+  float: left;
+}
+
+.copyrightMenu ul {
+  float: right;
+  overflow: hidden;
+}
+
+.copyrightMenu li a {
+  text-decoration: none;
+  color: #ababab;
+  display: block;
+  padding: 15px;
+}
+
+.copyrightMenu li a {
+  text-decoration: none;
+  color: #ababab;
+  display: block;
+  padding: 30px 15px;
+}
+
+.fboxWrapper {
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+.fbox {
+  overflow: hidden;
+  width: 250px;
+  float: left;
+  margin-right: 36px;
+  color: #ababab;
+}
+
+.fbox:last-child {
+  margin-right: 0px !important;
+}
+
+.fbox h3 {
+  margin-bottom: 20px;
+  color: #dfdfdf;
+  font-family: "Oswald";
+  font-size: 20px;
+}
+
+.fbox p {
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.ficons a {
+  color: #ababab;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.ficons a:hover {
+  color: #ff5200;
+}
+
+span#contacts {
+  display: block;
+  margin-bottom: 0px;
+  font-size: 15px;
+  overflow: hidden;
+}
+
+span#contacts i {
+  color: #ff5200;
+  display: block;
+  width: 10%;
+  float: left;
+  margin-top: 7px;
+  margin-right: 10px;
+}
+
+span#contacts p {
+  width: 85%;
+  float: left;
+}
+
+span#contacts p {
+  width: 86%;
+  float: left;
+}
+
+.fbox li {
+  margin-bottom: 15px;
+  list-style: none;
+  border-bottom: 1px dashed #ababab;
+  padding-bottom: 8px;
+}
+
+.fbox ul li a {
+  color: #ababab;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.fbox ul li a:hover {
+  color: #ff5200;
+}
+
+.fbox ul li i {
+  font-size: 14px;
+}
+
+.fbox ul li a:hover {
+  color: #ff5200;
+}
+
+.fRpost {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.fRpostMeta {
+  width: 20%;
+  float: left;
+  background: #313131;
+  margin-right: 12px;
+  overflow: hidden;
+  text-align: center;
+  width: 50px;
+  padding: 8px 0px;
+  border-radius: 5px;
+}
+
+.fRpostTittle {
+  width: 75%;
+  float: left;
+}
+
+.fRpostMeta span:first-child {
+  color: #dfdfdf;
+  font-size: 23px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.fRpostMeta span:nth-child(2) {
+  color: #dfdfdf;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 13px;
+  display: block;
+}
+
+.fRpostTittle h3 {
+  font-size: 14px;
+  width: 160px;
+  margin-bottom: 7px;
+  padding-top: 1px;
+  transition: 0.3s;
+  cursor: pointer;
+  color: #ababab;
+}
+
+.fRpostTittle h3:hover {
+  color: #ff5200;
+}
+
+.fRpostTittle a {
+  text-decoration: none;
+  color: #ababab;
+  font-size: 10px;
+}
+
+.subsBoxWrapper {
+  overflow: hidden;
+  background: #ff5200;
+  border-radius: 3px;
+  color: white;
+}
+
+.subsBoxSin {
+  width: 350px;
+  float: left;
+  padding: 30px 30px;
+  margin-right: 30px;
+}
+
+.subsBoxSin:last-child {
+  margin-right: 0px !important;
+}
+
+.subsBoxSin h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.inputBoxes input:first-child {
+  border-top-left-radius: 20px;
+  border: none;
+  padding: 13px;
+  border-bottom-left-radius: 20px;
+  width: 200px;
+}
+
+.inputBoxes input:first-child:focus {
+  outline: none;
+}
+
+input#subSubmit {
+  padding: 13px;
+  border: none;
+  border-radius: 20px;
+  background: black;
+  color: white;
+  width: 80px;
+  transform: translateX(-22px);
+  cursor: pointer;
+}
+
+.subsBoxSin p {
+  width: 310px;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.subsFollowIcons a {
+  color: white;
+  display: block;
+  float: left;
+  border: 1px solid white;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.subsFollowIcons a i {
+  margin-top: 7px;
+}
+
+.subsFollowIcons a:hover {
+  background: white;
+  color: black;
+}
+section#subscribe {
+  transform: translateY(140px);
+  margin-top: -200px;
+}
+
+ul.subMenu {
+  list-style: none;
+  width: 250px;
+  position: absolute;
+  top: unset;
+  background: white;
+  border-top: 1px solid #ddd;
+  padding: 20px 20px;
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: 0.5s;
+  margin-left: 20px;
+}
+
+ul.mailMenuItem li:nth-child(2):hover ul.subMenu {
+  transform: scaleY(1);
+}
+
+ul.subMenu li {
+  float: none;
+}
+
+ul.subMenu li a {
+  padding: 7px;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-family: "Work Sans";
+  color: #1e1e1e;
+  transition: 0.5s;
+}
+
+ul.subMenu li a:before {
+  content: "";
+  width: 0px;
+  height: 2px;
+  display: inline-block;
+  background: #ff5200;
+  vertical-align: middle;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+ul.subMenu li:hover a:before {
+  width: 15px;
+}

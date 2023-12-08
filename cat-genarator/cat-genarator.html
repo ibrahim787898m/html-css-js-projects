@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="cat-genarator.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>Cat Genarator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Generate Cat</h2>
+      <div class="flex-div">
+        <div class="buttonDiv">
+          <button
+            id="generate"
+            onclick="generateCat()"
+            class="btn btn-primary"
+            type="button"
+            name="button"
+          >
+            Generate Cat
+          </button>
+          <button
+            id="destroy"
+            onclick="destroyCat()"
+            class="btn btn-danger"
+            type="button"
+            name="button"
+          >
+            Destroy Cat
+          </button>
+        </div>
+        <div id="result"></div>
+      </div>
+    </div>
+    <script src="cat-genarator.js" charset="utf-8"></script>
+  </body>
+</html>
