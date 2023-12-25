@@ -29,6 +29,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: 0px 0px 15px -3px black;
 }
 .logo {
   width: 160px;
@@ -493,7 +494,20 @@ footer {
     top: 65px;
     left: 0;
     transition: transform 0.3s;
+    box-shadow: -3px 0px 15px 0px black;
   }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .left-sidebar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .left-sidebar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
   .left-sidebar-active {
     transform: scaleX(1);
     transform-origin: left;
